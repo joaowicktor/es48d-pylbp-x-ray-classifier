@@ -4,6 +4,7 @@ from datetime import datetime
 import mlp_classifier, rf_classifier, svm_classifier
 
 def main():
+    os.makedirs('./results', exist_ok=True)
     mainStartTime = time.time()
     results = []
     modelNames = ['MLP','SVM','RF']
